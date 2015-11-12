@@ -4,7 +4,7 @@
 
 ## to use: 
 ##
-## a <- c=rbind(c(1, -1/4), c(-1/4, 1))  # create matrix
+## a <- rbind(c(1, -1/4), c(-1/4, 1))  # create matrix
 ## b <- makeCacheSolve(a)  # create an object for that matrix
 ## cacheSolve(b) # send that object to cacheSolve
 ##
@@ -27,7 +27,7 @@ makeCacheSolve <- function(x = matrix()) {
 }
 
 ## This function computes the inverse of the special "matrix" returned by 
-## makeCacheMatrix above.
+## makeCacheSolve above.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
